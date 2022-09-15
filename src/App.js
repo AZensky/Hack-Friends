@@ -43,8 +43,11 @@ function App() {
 
   function handleKeyDown(e) {
     if (e.key !== "Escape") {
-      runScript();
-      displayMessage();
+      if (screenLocked) return;
+      else {
+        runScript();
+        displayMessage();
+      }
     } else removeMessage();
   }
 
