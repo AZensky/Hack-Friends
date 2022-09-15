@@ -26,7 +26,7 @@ body {
 
 .source {
   color: #2ad400;
-  font-size: 16px;
+  font-size: 13px;
   /* pre-wrap	Whitespace is preserved by the browser. Text will wrap when necessary, and on line breaks */
   white-space: pre-wrap;
 }
@@ -41,6 +41,9 @@ body {
   text-align: center;
   border: 2px solid;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   /* center of the screen */
   position: absolute;
@@ -50,6 +53,11 @@ body {
   left: 50%;
   /* This, combined with the position absolute and top/left, centers the message on the screen */
   transform: translate(-50%, -50%);
+}
+
+.msg-sub-head {
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 /* Animation for success hack */
