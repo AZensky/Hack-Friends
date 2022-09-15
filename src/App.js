@@ -13,7 +13,7 @@ function App() {
   // Set up an empty paragraph element to be used as a placeholder
   const scrollRef = useRef();
   // Scroll to the bottom of the container when the displayed code changes (for when displayed code is longer than a page)
-  scrollRef.current.scrollIntoView();
+  scrollRef?.current?.scrollIntoView();
 
   useEffect(() => {
     // So the user doesn't have to click on the container, when the component is mounted/page is loaded, we'll focus the container for the user
