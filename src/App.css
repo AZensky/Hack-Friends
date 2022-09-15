@@ -15,9 +15,10 @@ body {
 /* Overflow-y is set so we can add additional source code past 100vh, but we will hide scroll bar later in css file */
 .container {
   width: 100%;
-  height: 100vh;
+  height: 94vh;
   overflow-y: auto;
   padding: 12px;
+  margin-bottom: 1vh;
 }
 
 .container:focus {
@@ -118,4 +119,34 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+/* Container for footer */
+.footer-container {
+  color: #2ad400;
+  height: 40px;
+  border-top: 1px solid rgb(0, 255, 0);
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Content inside footer */
+.contact-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 1rem;
+  gap: 1rem;
+}
+
+.contact-container > a {
+  color: #2ad400;
+  text-decoration: none;
+}
+
+/* Text decoration underline when hovering over social links */
+.contact-container > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

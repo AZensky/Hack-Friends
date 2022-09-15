@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import AccessMessage from "./AccessMessage";
+import Footer from "./Footer";
 import hackCode from "./sourceCode";
 import "./App.css";
 
@@ -63,6 +64,7 @@ function App() {
         <p ref={scrollRef}></p>
         {screenLocked && <AccessMessage isHacked={isHacked} />}
       </div>
+      <Footer />
     </>
   );
 }
